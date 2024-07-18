@@ -18,15 +18,3 @@ section {
 body {
 	line-height: 1.2;
 }
-ol {
-	padding-left: 1.4em;
-	list-style: decimal;
-}
-ul {
-	padding-left: 1.4em;
-	list-style: square;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
