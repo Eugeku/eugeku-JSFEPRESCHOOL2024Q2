@@ -6,6 +6,7 @@
     <title>Cozy home. Main</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style-main.css">
+    <link rel="icon" href="./images/main/favicon/favicon.ico">
     <meta name="description" content="Cozy home. Main">
     <meta name="keywords" content="Cozy home. Pets">
 </head>
@@ -13,21 +14,21 @@
 <body>
     <div class="content-wrapper">
         <div class="header-wrapper">
-        <header class="header">
-            <div class="header-logo">
-                <h1 class="header-title">Cozy House</h1>
-                <p class="header-subtitle">Shelter for pets in Boston</p>
-            </div>
-            <nav class="header-nav">
-                <ul>
-                    <li class="active-tab"><a href="#">About the shelter</a></li>
-                    <li><a href="#">Our pets</a></li>
-                    <li><a href="#">Help the shelter</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+            <header class="header">
+                <div class="header-logo">
+                    <h1 class="header-title">Cozy House</h1>
+                    <p class="header-subtitle">Shelter for pets in Boston</p>
+                </div>
+                <nav class="header-nav">
+                    <ul>
+                        <li class="active-tab"><a href="./main.html">About the shelter</a></li>
+                        <li><a href="./pets.html">Our pets</a></li>
+                        <li><a href="#help">Help the shelter</a></li>
+                        <li><a href="#footer">Contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
 
         <section class="start-screen">
             <div class="start-screen-background-opacity">
@@ -36,7 +37,7 @@
                         <h2>Not only people need a house</h2>
                         <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
                             He or she will love you more than anybody else in the world, you will see!</p>
-                        <button class="make-friend-button button-primary">Make a friend</button>
+                        <button class="make-friend-button button-primary" onclick="document.location='./main.html#pets-main'">Make a friend</button>
                     </div>
                     <img class="start-screen-puppy" src="./images/main/start-screen-puppy.png" alt="puppy">
                 </div>
@@ -46,56 +47,56 @@
         <section class="about">
             <div class="about-content">
                 <div class="about-content-1">
-                    <img class="about-content-image" src="./images/main/about-pets.png" alt="About pets image"></img>
+                    <img class="about-content-image" src="./images/main/about-pets.png" alt="About pets image">
                     <div class="about-content-text">
-                        <h3>About the shelter “Cozy House”</h2>
-                            <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of
-                                them
-                                will find a family. The others will continue to live with us and will be waiting for a
-                                lucky
-                                chance to become dearly loved.</p>
-                            <p>We feed our wards with the best food and make sure that they do not get sick, feel
-                                comfortable
-                                (including psychologically) and well. We are supported by 87 volunteers and 28 employees
-                                of
-                                various skill levels. About 12% of the animals are taken by the shelter staff. Taking
-                                care of
-                                the animals, they become attached to the pets and would hardly ever leave them alone.
-                            </p>
+                        <h3>About the shelter “Cozy House”</h3>
+                        <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of
+                            them
+                            will find a family. The others will continue to live with us and will be waiting for a
+                            lucky
+                            chance to become dearly loved.</p>
+                        <p>We feed our wards with the best food and make sure that they do not get sick, feel
+                            comfortable
+                            (including psychologically) and well. We are supported by 87 volunteers and 28 employees
+                            of
+                            various skill levels. About 12% of the animals are taken by the shelter staff. Taking
+                            care of
+                            the animals, they become attached to the pets and would hardly ever leave them alone.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="pets">
-            <div class="pets-content">
+        <section id="pets-main" class="pets-main">
+            <div class="pets-content-main">
                 <h3>Our friends who<br>are looking for a house</h3>
-                <div class="pets-slider">
+                <div class="pets-main-slider">
                     <button class="prev"></button>
                     <div class="slider-content">
                         <div class="slide">
-                            <img class="slide-image" src="./images/main/pets-katrine.png" alt="pets-katrine">
+                            <img class="slide-image" src="./images/main/dogs/pets-katrine.png" alt="pets-katrine">
                             <div class="pet-name">Katrine</div>
                             <button class="button-secondary">Learn more</button>
                         </div>
                         <div class="slide">
-                            <img class="slide-image" src="./images/main/pets-jennifer.png" alt="pets-jennifer">
+                            <img class="slide-image" src="./images/main/dogs/pets-jennifer.png" alt="pets-jennifer">
                             <div class="pet-name">Jennifer</div>
                             <button class="button-secondary">Learn more</button>
                         </div>
                         <div class="slide">
-                            <img class="slide-image" src="./images/main/pets-woody.png" alt="pets-woody">
+                            <img class="slide-image" src="./images/main/dogs/pets-woody.png" alt="pets-woody">
                             <div class="pet-name">Woody</div>
                             <button class="button-secondary">Learn more</button>
                         </div>
                     </div>
                     <button class="prev next"></button>
                 </div>
-                <button class="button-primary pets-button">Get to know the rest</button>
+                <button class="button-primary pets-button" onclick="document.location='./pets.html'">Get to know the rest</button>
             </div>
         </section>
 
-        <section class="help">
+        <section id="help" class="help">
             <div class="help-content">
                 <h3>How you can help<br>our shelter</h3>
                 <ul class="help-list">
@@ -151,12 +152,14 @@
                             <span class="credit-card-number">8380 2880 8028 8791 7435</span>
                         </div>
                     </div>
-                    <p class="legal-info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p class="legal-info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et
+                        vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                 </div>
             </div>
         </section>
 
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <div class="footer-content">
                 <div class="contacts footer-content-block">
                     <h3 class="footer-content-header">For questions and suggestions</h3>

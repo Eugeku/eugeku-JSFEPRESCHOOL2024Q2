@@ -1,6 +1,29 @@
+:root {
+	--color-light-xl: rgb(255, 255, 255);
+	--color-light-l: rgb(246, 246, 246);
+	--color-light-s: rgb(250, 250, 250);
+	--color-dark-s: rgb(205, 205, 205);
+	--color-dark-m: rgb(178, 178, 178);
+	--color-dark-l: rgb(84, 84, 84);
+	--color-dark-xl: rgb(76, 76, 76);
+	--color-dark-2xl: rgb(68, 68, 68);
+	--color-dark-3xl: rgb(41, 41, 41);
+	--color-primary: rgb(241, 205, 179);
+	--color-primary-light: rgb(253, 220, 196);
+
+	--font-family: "Georgia", sans-serif;
+	--second-family: "Arial", sans-serif;
+	--third-family: "Inter", sans-serif;
+}
+
+body {
+	background: var(--color-light-xl);
+}
+
 .content-wrapper {
 	max-width: 1280px;
 	margin: 0 auto;
+	background: var(--color-light-xl);
 }
 
 section,
@@ -17,12 +40,12 @@ footer {
 	padding: 15px 45px;
 	border-radius: 100px;
 	border-width: 0px;
-	background: rgb(241, 205, 179);
+	background: var(--color-primary);
 }
 
 .button-primary {
-	color: rgb(41, 41, 41);
-	font-family: Georgia, sans-serif;
+	color: var(--color-dark-3xl);
+	font-family: var(--font-family);
 	font-size: 17px;
 	font-weight: 400;
 	line-height: 130%;
@@ -31,40 +54,45 @@ footer {
 }
 
 h3 {
-	font-family: Georgia, serif;
+	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 35px;
 	line-height: 130%;
 	letter-spacing: 0.06em;
-	color: rgb(84, 84, 84);
+	color: var(--color-dark-l);
 	text-align: center;
+}
+
+/* Interactions */
+body {
+	cursor: url(../images/main/icons/normal-cursor.svg), pointer;
 }
 
 /* Header */
 .header-wrapper {
 	position: relative;
-    margin-right: 40px;
-    margin-left: 40px;
+	margin-right: 40px;
+	margin-left: 40px;
 }
 
 .header {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    padding-top: 30px;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	padding-top: 30px;
 }
 
 h1 {
-	font-family: Georgia, serif;
+	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 110%;
 	letter-spacing: 0.06em;
-	color: rgb(241, 205, 179);
+	color: var(--color-primary);
 	text-align: left;
 }
 
@@ -78,11 +106,11 @@ h1 {
 }
 
 .header-subtitle {
-	font-family: Arial, sans-serif;
+	font-family: var(--second-family);
 	font-weight: 400;
 	font-size: 13px;
 	letter-spacing: 0.1em;
-	color: rgb(255, 255, 255);
+	color: var(--color-light-xl);
 	line-height: 15px;
 	text-align: left;
 }
@@ -104,18 +132,18 @@ h1 {
 }
 
 .header-nav li a {
-	font-family: Arial, sans-serif;
+	font-family: var(--second-family);
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 160%;
-	color: rgb(205, 205, 205);
+	color: var(--color-dark-s);
 	letter-spacing: 0px;
 	text-align: left;
 	text-decoration: none;
 }
 
 .active-tab {
-	border-bottom: 3px solid rgb(241, 205, 179);
+	border-bottom: 3px solid var(--color-primary);
 }
 
 /* Start screen */
@@ -127,7 +155,6 @@ h1 {
 
 .start-screen {
 	height: 908px;
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	background: url("../images/main/start-screen-gradient-background.jpg");
 	align-content: end;
 }
@@ -154,8 +181,8 @@ h1 {
 
 .start-screen-text-content h2 {
 	width: 310px;
-	color: rgb(255, 255, 255);
-	font-family: Georgia;
+	color: var(--color-light-xl);
+	font-family: var(--font-family);
 	font-size: 44px;
 	font-weight: 400;
 	line-height: 130%;
@@ -164,8 +191,8 @@ h1 {
 }
 
 .start-screen-text-content p {
-	color: rgb(205, 205, 205);
-	font-family: Arial;
+	color: var(--color-dark-s);
+	font-family: var(--second-family);
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 160%;
@@ -177,7 +204,7 @@ h1 {
 
 .about {
 	height: 588px;
-	background: rgb(255, 255, 255);
+	background: var(--color-light-xl);
 }
 
 .about-content {
@@ -185,7 +212,7 @@ h1 {
 }
 
 .about-content-1 {
-	width: 850px;
+	max-width: 850px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -203,28 +230,28 @@ h1 {
 }
 
 .about-content-text h3 {
-	width: 370px;
+	max-width: 370px;
 	height: 90px;
 	text-align: left;
 }
 
 .about-content-text p {
-	font-family: Arial, sans-serif;
+	font-family: var(--second-family);
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 160%;
-	color: rgb(76, 76, 76);
+	color: var(--color-dark-xl);
 	letter-spacing: 0px;
 	text-align: left;
 }
 
 /* Pets */
-.pets {
+.pets-main {
 	height: 877px;
-	background: rgb(246, 246, 246);
+	background: var(--color-light-l);
 }
 
-.pets-content {
+.pets-content-main {
 	padding-top: 80px;
 	display: flex;
 	flex-direction: column;
@@ -233,10 +260,9 @@ h1 {
 	justify-content: space-between;
 }
 
-.pets-content h3 {
+.pets-content-main h3 {
 	width: 400px;
 	height: 90px;
-	text-align: center;
 }
 
 .slider-content {
@@ -249,7 +275,7 @@ h1 {
 
 .prev {
 	border-radius: 100px;
-	border: 2px solid rgb(241, 205, 179);
+	border: 2px solid var(--color-primary);
 	background: url(../images/main/arrow.svg) no-repeat center;
 	width: 52px;
 	height: 52px;
@@ -259,9 +285,7 @@ h1 {
 	transform: rotate(180.00deg);
 }
 
-.pets-slider {
-	height: 435px;
-
+.pets-main-slider {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -273,7 +297,7 @@ h1 {
 .slide {
 	width: 270px;
 	height: 435px;
-	background: rgb(250, 250, 250);
+	background: var(--color-light-s);
 	border-radius: 9px;
 
 	display: flex;
@@ -289,32 +313,32 @@ h1 {
 }
 
 .pet-name {
-	font-family: Georgia, serif;
+	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 20px;
 	letter-spacing: 0.06em;
 	text-align: center;
-	color: rgb(84, 84, 84);
+	color: var(--color-dark-l);
 }
 
 .button-secondary {
 	width: 187px;
 	height: 52px;
 	margin-bottom: 30px;
-	border: 2px solid rgb(241, 205, 179);
+	border: 2px solid var(--color-primary);
 	border-radius: 100px;
-	font-family: "Georgia", sans-serif;
+	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 130%;
 	letter-spacing: 0.06em;
-	color: rgb(41, 41, 41);
+	color: var(--color-dark-3xl);
 }
 
 /* Help */
 
 .help {
-	background: rgb(255, 255, 255);
+	background: var(--color-light-xl);
 }
 
 .help-content {
@@ -346,13 +370,13 @@ h1 {
 }
 
 h4.help-name {
-	font-family: "Georgia", sans-serif;
+	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 115%;
 	letter-spacing: 0.06em;
 	text-align: center;
-	color: rgb(84, 84, 84);
+	color: var(--color-dark-l);
 	white-space: nowrap;
 }
 
@@ -394,7 +418,7 @@ h4.help-name {
 
 /* Donation */
 .donation {
-	background: rgb(246, 246, 246);
+	background: var(--color-light-l);
 	display: flex;
 	justify-content: center;
 }
@@ -429,23 +453,22 @@ h4.help-name {
 .donation-content-text h3 {
 	text-wrap: balance;
 	text-align: left;
-
 }
 
 .donation-content-text h5 {
-	font-family: Georgia, serif;
+	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 110%;
 	letter-spacing: 0.06em;
-	color: rgb(84, 84, 84);
+	color: var(--color-dark-l);
 }
 
 .credit-card {
 	border-radius: 9px;
 	width: 349px;
 	height: 43px;
-	background: rgb(241, 205, 179);
+	background: var(--color-primary);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -468,17 +491,17 @@ h4.help-name {
 	font-size: 20px;
 	line-height: 115%;
 	letter-spacing: 0.06em;
-	color: rgb(84, 84, 84);
-	font-family: Georgia, serif;
+	color: var(--color-dark-l);
+	font-family: var(--font-family);
 }
 
 .legal-info {
-	font-family: Arial, sans-serif;
+	font-family: var(--second-family);
 	font-style: italic;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 150%;
-	color: rgb(178, 178, 178);
+	color: var(--color-dark-m);
 }
 
 /* Footer */
@@ -508,33 +531,29 @@ h4.help-name {
 	height: 234px;
 	padding-top: 16px;
 	display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 h3.footer-content-header {
-	font-family: "Georgia", sans-serif;
-	font-weight: 400;
-	font-size: 35px;
-	line-height: 130%;
-	letter-spacing: 0.06em;
-	color: rgb(255, 255, 255);
+	font-family: var(--font-family);
 	text-align: left;
+	color: var(--color-light-xl);
 }
 
 .footer-content-block span {
-	font-family: "Georgia", sans-serif;
+	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 115%;
 	letter-spacing: 0.06em;
-	color: rgb(241, 205, 179);
+	color: var(--color-primary);
 	padding-left: 20px;
 }
 
 .footer-content-block-item-wrapper {
 	display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
 }
