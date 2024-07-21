@@ -16,6 +16,10 @@
 	--third-family: "Inter", sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: var(--color-light-xl);
 }
@@ -65,7 +69,11 @@ h3 {
 
 /* Interactions */
 body {
-	cursor: url(../images/main/icons/normal-cursor.svg), pointer;
+	cursor: url(../images/main/icons/normal-cursor1.png), pointer !important;
+}
+
+button:hover, button:active, li a:hover, li a:active, li:hover, li:active {
+	cursor: url(../images/main/icons/hover-cursor1.png), pointer !important;
 }
 
 /* Header */
@@ -129,6 +137,11 @@ h1 {
 
 .header-nav li {
 	list-style-type: none;
+}
+
+.header-nav li:hover {
+	border-bottom: 3px solid var(--color-primary);
+	transition: 0.5s;
 }
 
 .header-nav li a {
@@ -299,7 +312,6 @@ h1 {
 	height: 435px;
 	background: var(--color-light-s);
 	border-radius: 9px;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
