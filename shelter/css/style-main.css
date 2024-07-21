@@ -72,8 +72,31 @@ body {
 	cursor: url(../images/main/icons/normal-cursor1.png), pointer !important;
 }
 
-button:hover, button:active, li a:hover, li a:active, li:hover, li:active {
+button:hover, button:active, .header-nav li a:hover, .header-nav li a:active, .header-nav li:hover, .header-nav li:active {
 	cursor: url(../images/main/icons/hover-cursor1.png), pointer !important;
+}
+
+button, .slide, .header-logo {
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+button:hover, .slide:hover, .header-logo:hover {
+    transform: scale(1.2);
+    cursor: url(../images/main/icons/hover-cursor.svg), pointer;
+	box-shadow: 0 4px 4px 0 var(--color-dark-3xl);
+}
+
+button.make-friend-button:hover {
+	box-shadow: 0 4px 4px 0 var(--color-light-xl);
+}
+
+.header-logo:hover {
+	box-shadow: none;
+}
+
+button:hover {
+	text-decoration: underline;
 }
 
 /* Header */
@@ -286,16 +309,19 @@ h1 {
 	justify-content: space-between;
 }
 
-.prev {
+.slder-navigation-button {
 	border-radius: 100px;
 	border: 2px solid var(--color-primary);
-	background: url(../images/main/arrow.svg) no-repeat center;
 	width: 52px;
 	height: 52px;
 }
 
+.prev {
+	background: url(../images/main/arrow-left.svg) no-repeat center;
+}
+
 .next {
-	transform: rotate(180.00deg);
+	background: url(../images/main/arrow-right.svg) no-repeat center;
 }
 
 .pets-main-slider {
