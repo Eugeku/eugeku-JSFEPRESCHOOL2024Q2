@@ -69,11 +69,15 @@ h3 {
 
 /* Interactions */
 body {
-	cursor: url(../images/main/icons/normal-cursor1.png), pointer !important;
+	cursor: url(../images/main/icons/normal-cursor.svg), pointer !important;
 }
 
-button:hover, button:active, .header-nav li a:hover, .header-nav li a:active, .header-nav li:hover, .header-nav li:active {
-	cursor: url(../images/main/icons/hover-cursor1.png), pointer !important;
+button:hover, button:active, .header-nav li a:hover, .header-nav li a:active, .header-nav li:hover, .header-nav li:active, .footer-content-block .footer-content-block-item-wrapper:hover, .credit-card:hover {
+	cursor: url(../images/main/icons/hover-cursor.svg), pointer !important;
+}
+
+.paginator .inactive:hover {
+	cursor: url(../images/main/icons/inactive-cursor.svg), pointer !important;
 }
 
 button, .slide, .header-logo {
@@ -81,13 +85,13 @@ button, .slide, .header-logo {
     transition: transform 0.3s ease;
 }
 
-button:hover, .slide:hover, .header-logo:hover {
+button:not(.inactive):not(.current):hover, .slide:hover, .header-logo:hover {
     transform: scale(1.2);
     cursor: url(../images/main/icons/hover-cursor.svg), pointer;
 	box-shadow: 0 4px 4px 0 var(--color-dark-3xl);
 }
 
-button.make-friend-button:hover {
+div.start-screen-text-content button.make-friend-button:hover {
 	box-shadow: 0 4px 4px 0 var(--color-light-xl);
 }
 
@@ -95,7 +99,7 @@ button.make-friend-button:hover {
 	box-shadow: none;
 }
 
-button:hover {
+button:not(.inactive):not(.current):not(.active):hover {
 	text-decoration: underline;
 }
 
@@ -176,6 +180,10 @@ h1 {
 	letter-spacing: 0px;
 	text-align: left;
 	text-decoration: none;
+}
+
+.header-nav li.active-tab a {
+	color: var(--color-light-s);
 }
 
 .active-tab {

@@ -50,6 +50,10 @@ h1 {
 	text-decoration: none;
 }
 
+.header-nav li.active-tab a {
+	color: var(--color-dark-3xl);
+}
+
 /* Pets */
 
 .pets {
