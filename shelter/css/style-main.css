@@ -68,6 +68,7 @@ h3 {
 }
 
 /* Interactions */
+
 body {
 	cursor: url(../images/main/icons/normal-cursor.svg), pointer !important;
 }
@@ -290,6 +291,7 @@ h1 {
 }
 
 /* Pets */
+
 .pets-main {
 	height: 877px;
 	background: var(--color-light-l);
@@ -463,6 +465,7 @@ h4.help-name {
 }
 
 /* Donation */
+
 .donation {
 	background: var(--color-light-l);
 	display: flex;
