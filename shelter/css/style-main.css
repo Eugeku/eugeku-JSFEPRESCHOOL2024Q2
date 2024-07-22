@@ -70,26 +70,44 @@ h3 {
 /* Interactions */
 
 body {
-	cursor: url(../images/main/icons/normal-cursor.svg), pointer !important;
+	cursor: url(../images/icons/normal-cursor.svg), pointer !important;
 }
 
-button:hover, button:active, .header-nav li a:hover, .header-nav li a:active, .header-nav li:hover, .header-nav li:active, .footer-content-block .footer-content-block-item-wrapper:hover, .credit-card:hover {
-	cursor: url(../images/main/icons/hover-cursor.svg), pointer !important;
+button:hover,
+button:active,
+.header-nav li a:hover,
+.header-nav li a:active,
+.header-nav li:hover,
+.header-nav li:active,
+.footer-content-block .footer-content-block-item-wrapper:hover,
+.credit-card:hover {
+	cursor: url(../images/icons/hover-cursor.svg), pointer !important;
 }
 
 .paginator .inactive:hover {
-	cursor: url(../images/main/icons/inactive-cursor.svg), pointer !important;
+	cursor: url(../images/icons/inactive-cursor.svg), pointer !important;
 }
 
-button, .slide, .header-logo {
-    margin: 0;
-    transition: transform 0.3s ease;
+button,
+.slide,
+.header-logo,
+.footer-content-block .footer-content-block-item-wrapper {
+	margin: 0;
+	transition: transform 0.3s ease;
 }
 
-button:not(.inactive):not(.current):hover, .slide:hover, .header-logo:hover {
-    transform: scale(1.2);
-    cursor: url(../images/main/icons/hover-cursor.svg), pointer;
+button:not(.inactive):not(.current):hover,
+.slide:hover,
+.header-logo:hover {
+	transform: scale(1.2);
+	cursor: url(../images/icons/hover-cursor.svg), pointer;
 	box-shadow: 0 4px 4px 0 var(--color-dark-3xl);
+}
+
+.footer-content-block .footer-content-block-item-wrapper:hover {
+	transform: scale(1.2);
+	text-decoration: underline;
+	text-decoration-color: var(--color-primarys);
 }
 
 div.start-screen-text-content button.make-friend-button:hover {
@@ -200,7 +218,7 @@ h1 {
 
 .start-screen {
 	height: 908px;
-	background: url("../images/main/start-screen-gradient-background.jpg");
+	background: url("../images/backgrounds/start-screen-gradient-background.png");
 	align-content: end;
 }
 
@@ -327,11 +345,11 @@ h1 {
 }
 
 .prev {
-	background: url(../images/main/arrow-left.svg) no-repeat center;
+	background: url(../images/icons/arrow-left.svg) no-repeat center;
 }
 
 .next {
-	background: url(../images/main/arrow-right.svg) no-repeat center;
+	background: url(../images/icons/arrow-right.svg) no-repeat center;
 }
 
 .pets-main-slider {
@@ -429,39 +447,39 @@ h4.help-name {
 }
 
 .help-1 {
-	background: url(../images/main/icon-pet-food.svg) no-repeat center;
+	background: url(../images/icons/icon-pet-food.svg) no-repeat center;
 }
 
 .help-2 {
-	background: url(../images/main/icon-transportation.svg) no-repeat center;
+	background: url(../images/icons/icon-transportation.svg) no-repeat center;
 }
 
 .help-3 {
-	background: url(../images/main/icon-toys.svg) no-repeat center;
+	background: url(../images/icons/icon-toys.svg) no-repeat center;
 }
 
 .help-4 {
-	background: url(../images/main/icon-bowls-and-cups.svg) no-repeat center;
+	background: url(../images/icons/icon-bowls-and-cups.svg) no-repeat center;
 }
 
 .help-5 {
-	background: url(../images/main/icon-shampoos.svg) no-repeat center;
+	background: url(../images/icons/icon-shampoos.svg) no-repeat center;
 }
 
 .help-6 {
-	background: url(../images/main/icon-vitamins.svg) no-repeat center;
+	background: url(../images/icons/icon-vitamins.svg) no-repeat center;
 }
 
 .help-7 {
-	background: url(../images/main/icon-medicines.svg) no-repeat center;
+	background: url(../images/icons/icon-medicines.svg) no-repeat center;
 }
 
 .help-8 {
-	background: url(../images/main/icon-collars-leashes.svg) no-repeat center;
+	background: url(../images/icons/icon-collars-leashes.svg) no-repeat center;
 }
 
 .help-9 {
-	background: url(../images/main/icon-sleeping-area.svg) no-repeat center;
+	background: url(../images/icons/icon-sleeping-area.svg) no-repeat center;
 }
 
 /* Donation */
@@ -532,7 +550,7 @@ h4.help-name {
 .credit-card-image {
 	width: 30px;
 	height: 23px;
-	background: url("../images/main/credit-card.svg") no-repeat center;
+	background: url("../images/icons/credit-card.svg") no-repeat center;
 }
 
 .credit-card-number {
@@ -556,7 +574,7 @@ h4.help-name {
 /* Footer */
 .footer {
 	height: 350px;
-	background: url("../images/main/footer-gradient-background.png");
+	background: url("../images/backgrounds/footer-gradient-background.png");
 }
 
 .contacts {
