@@ -107,7 +107,7 @@ button:not(.inactive):not(.current):hover,
 .footer-content-block .footer-content-block-item-wrapper:hover {
 	transform: scale(1.2);
 	text-decoration: underline;
-	text-decoration-color: var(--color-primarys);
+	text-decoration-color: var(--color-primary);
 }
 
 div.start-screen-text-content button.make-friend-button:hover {
