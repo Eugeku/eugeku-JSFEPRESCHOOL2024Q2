@@ -16,6 +16,10 @@
 	--third-family: "Inter", sans-serif;
 }
 
+body {
+	background: var(--color-light-xl);
+}
+
 /* Header */
 
 .header-wrapper {
@@ -102,6 +106,7 @@ h2 {
 	border-radius: 100px;
 	width: 52px;
 	height: 52px;
+	background: var(--color-light-s);
 }
 
 .button-paginator span {
