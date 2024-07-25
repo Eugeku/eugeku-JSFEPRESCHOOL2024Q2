@@ -311,7 +311,7 @@ h1 {
 /* Pets */
 
 .pets-main {
-	height: 877px;
+	padding-bottom: 100px;
 	background: var(--color-light-l);
 }
 
@@ -345,11 +345,11 @@ h1 {
 }
 
 .prev {
-	background: url(../images/icons/arrow-left.svg) no-repeat center;
+	background: url(../images/icons/arrow-left.svg) no-repeat center var(--color-light-s);
 }
 
 .next {
-	background: url(../images/icons/arrow-right.svg) no-repeat center;
+	background: url(../images/icons/arrow-right.svg) no-repeat center var(--color-light-s);
 }
 
 .pets-main-slider {
@@ -399,6 +399,7 @@ h1 {
 	line-height: 130%;
 	letter-spacing: 0.06em;
 	color: var(--color-dark-3xl);
+	background: var(--color-light-s);
 }
 
 /* Help */
