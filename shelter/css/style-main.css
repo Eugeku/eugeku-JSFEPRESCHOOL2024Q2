@@ -24,14 +24,10 @@ body {
 	background: var(--color-light-xl);
 }
 
-.content-wrapper {
-	max-width: 1280px;
-	margin: 0 auto;
-	background: var(--color-light-xl);
-}
-
 section,
 footer {
+	max-width: 1200px;
+	margin: 0 auto;
 	padding-right: 40px;
 	padding-left: 40px;
 }
@@ -124,9 +120,9 @@ button:not(.inactive):not(.current):not(.active):hover {
 
 /* Header */
 .header-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
 	position: relative;
-	margin-right: 40px;
-	margin-left: 40px;
 }
 
 .header {
@@ -210,6 +206,11 @@ h1 {
 }
 
 /* Start screen */
+.start-screen-wrapper {
+	background: url(../images/backgrounds/start-screen-gradient-background.png);
+	background-size: cover;
+}
+
 .start-screen-content {
 	display: flex;
 	justify-content: space-between;
@@ -218,7 +219,7 @@ h1 {
 
 .start-screen {
 	height: 908px;
-	background: url("../images/backgrounds/start-screen-gradient-background.png");
+	/* background: url("../images/backgrounds/start-screen-gradient-background.png"); */
 	align-content: end;
 }
 
@@ -265,9 +266,12 @@ h1 {
 
 /* About */
 
+.about-wrapper {
+	background: var(--color-light-xl);
+}
+
 .about {
 	height: 588px;
-	background: var(--color-light-xl);
 }
 
 .about-content {
@@ -310,9 +314,12 @@ h1 {
 
 /* Pets */
 
+.pets-main-wrapper {
+	background: var(--color-light-l);
+}
+
 .pets-main {
 	padding-bottom: 100px;
-	background: var(--color-light-l);
 }
 
 .pets-content-main {
@@ -404,7 +411,7 @@ h1 {
 
 /* Help */
 
-.help {
+.help-wrapper {
 	background: var(--color-light-xl);
 }
 
@@ -485,8 +492,11 @@ h4.help-name {
 
 /* Donation */
 
-.donation {
+.donation-wrapper {
 	background: var(--color-light-l);
+}
+
+.donation {
 	display: flex;
 	justify-content: center;
 }
@@ -573,9 +583,13 @@ h4.help-name {
 }
 
 /* Footer */
+.footer-wrapper {
+	background: url(../images/backgrounds/footer-gradient-background.png);
+	background-size: cover;
+}
+
 .footer {
 	height: 350px;
-	background: url("../images/backgrounds/footer-gradient-background.png");
 }
 
 .contacts {
