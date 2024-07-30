@@ -65,16 +65,20 @@ h3 {
 
 /* Interactions */
 
-body {
+body,
+.header-nav li.active-tab a:hover,
+.header-nav li.active-tab a:active,
+.header-nav li.active-tab:hover,
+.header-nav li.active-tab:active {
 	cursor: url(../images/icons/normal-cursor.svg), pointer !important;
 }
 
 button:hover,
 button:active,
-.header-nav li a:hover,
-.header-nav li a:active,
-.header-nav li:hover,
-.header-nav li:active,
+.header-nav li:not(.active-tab) a:hover,
+.header-nav li:not(.active-tab) a:active,
+.header-nav li:not(.active-tab):hover,
+.header-nav li:not(.active-tab):active,
 .footer-content-block .footer-content-block-item-wrapper:hover,
 .credit-card:hover {
 	cursor: url(../images/icons/hover-cursor.svg), pointer !important;
@@ -99,6 +103,20 @@ button:not(.inactive):not(.current):hover,
 	cursor: url(../images/icons/hover-cursor.svg), pointer;
 	box-shadow: 0 4px 4px 0 var(--color-dark-3xl);
 }
+
+button:hover:not(.inactive):not(.current):not(.slder-navigation-button), .credit-card:hover {
+	background: var(--color-primary-light);
+	border-color: var(--color-primary-light);
+}
+
+button.slder-navigation-button.next:hover, button.slder-navigation-button.prev:hover{
+	background-color: var(--color-primary-light);
+	border-color: var(--color-primary-light);
+}
+
+div.slide:hover {
+	background: var(--color-light-xl);
+}	
 
 .footer-content-block .footer-content-block-item-wrapper:hover {
 	transform: scale(1.2);
