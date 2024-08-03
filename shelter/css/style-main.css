@@ -13,7 +13,6 @@
 
 	--font-family: "Georgia", sans-serif;
 	--second-family: "Arial", sans-serif;
-	--third-family: "Inter", sans-serif;
 }
 
 html {
@@ -41,9 +40,6 @@ footer {
 	border-radius: 100px;
 	border-width: 0px;
 	background: var(--color-primary);
-}
-
-.button-primary {
 	color: var(--color-dark-3xl);
 	font-family: var(--font-family);
 	font-size: 17px;
@@ -104,19 +100,32 @@ button:not(.inactive):not(.current):hover,
 	box-shadow: 0 4px 4px 0 var(--color-dark-3xl);
 }
 
-button:hover:not(.inactive):not(.current):not(.slder-navigation-button), .credit-card:hover {
+.slide:hover {
+	transform: scale(1.2);
+	cursor: url(../images/icons/hover-cursor.svg), pointer;
+	box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.slide:hover button {
 	background: var(--color-primary-light);
 	border-color: var(--color-primary-light);
 }
 
-button.slder-navigation-button.next:hover, button.slder-navigation-button.prev:hover{
+button:hover:not(.inactive):not(.current):not(.slder-navigation-button),
+.credit-card:hover {
+	background: var(--color-primary-light);
+	border-color: var(--color-primary-light);
+}
+
+button.slder-navigation-button.next:hover,
+button.slder-navigation-button.prev:hover {
 	background-color: var(--color-primary-light);
 	border-color: var(--color-primary-light);
 }
 
 div.slide:hover {
 	background: var(--color-light-xl);
-}	
+}
 
 .footer-content-block .footer-content-block-item-wrapper:hover {
 	transform: scale(1.2);
@@ -137,14 +146,23 @@ button:not(.inactive):not(.current):not(.active):hover {
 }
 
 /* Header */
+#menu-toggle {
+	opacity: 0;
+	display: none;
+}
+
 .header-wrapper {
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: 0 auto;
 	position: relative;
 }
 
 .header {
-	width: 100%;
+	max-width: 100%;
+	padding-left: 40px;
+	padding-right: 40px;
+	left: 0;
+	right: 0;
 	height: 60px;
 	display: flex;
 	flex-direction: row;
@@ -179,18 +197,16 @@ h1 {
 	font-size: 13px;
 	letter-spacing: 0.1em;
 	color: var(--color-light-xl);
-	line-height: 15px;
 	text-align: left;
 }
 
 .header-nav {
-	width: 443px;
+	min-width: 443px;
 	height: 27px;
 }
 
 .header-nav ul {
 	display: flex;
-	align-items: center;
 	flex-direction: row;
 	justify-content: space-between;
 }
@@ -236,8 +252,7 @@ h1 {
 }
 
 .start-screen {
-	height: 908px;
-	/* background: url("../images/backgrounds/start-screen-gradient-background.png"); */
+	padding-top: 180px;
 	align-content: end;
 }
 
@@ -247,8 +262,7 @@ h1 {
 }
 
 .start-screen-puppy {
-	width: 698px;
-	height: 728px;
+	height: 100%;
 }
 
 .start-screen-text-content {
@@ -289,7 +303,7 @@ h1 {
 }
 
 .about {
-	height: 588px;
+	min-height: 588px;
 }
 
 .about-content {
@@ -522,7 +536,7 @@ h4.help-name {
 .donation-content {
 	max-width: 915px;
 	flex: auto;
-	height: 282px;
+	min-height: 282px;
 	padding-top: 80px;
 	padding-bottom: 100px;
 
@@ -539,7 +553,7 @@ h4.help-name {
 
 .donation-content-text {
 	max-width: 380px;
-	height: 282px;
+	min-height: 282px;
 
 	display: flex;
 	flex-direction: column;
@@ -607,17 +621,15 @@ h4.help-name {
 }
 
 .footer {
-	height: 350px;
+	min-height: 350px;
 }
 
 .contacts {
-	width: 279px;
-	height: 234px;
+	max-width: 279px;
 }
 
 .locations {
-	width: 302px;
-	height: 234px;
+	max-width: 302px;
 }
 
 .footer-content {
@@ -628,7 +640,7 @@ h4.help-name {
 }
 
 .footer-content-block {
-	height: 234px;
+	max-height: 234px;
 	padding-top: 16px;
 	display: flex;
 	flex-direction: column;
@@ -656,4 +668,323 @@ h3.footer-content-header {
 	flex-direction: row;
 	align-items: center;
 	flex-wrap: nowrap;
+}
+
+/* 768*/
+@media screen and (max-width: 1027px) {
+	section,
+	footer {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	/* Header */
+	.header {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	/* Start screen */
+	.start-screen {
+		padding-top: 150px;
+		align-content: end;
+	}
+
+	.make-friend-button {
+		margin: 0px auto;
+	}
+
+	.start-screen-content {
+		flex-direction: column;
+	}
+
+	.start-screen-puppy {
+		padding-top: 100px;
+		margin-left: auto;
+
+		/* TODO: add em's */
+		max-width: 569px;
+		max-height: 593px;
+	}
+
+	.start-screen-text-content {
+		padding-bottom: 0px;
+	}
+
+	/* About */
+	.about-content-1 {
+		flex-direction: column-reverse;
+		padding-bottom: 100px;
+	}
+
+	.about-content-text {
+		padding-bottom: 80px;
+	}
+
+	/* Pets */
+	.slider-content {
+		max-width: 580px;
+		overflow: hidden;
+		height: 435px;
+		flex-wrap: wrap;
+	}
+
+	/* Help */
+	.help-list {
+		gap: 55px 60px;
+	}
+
+	.help-list-item {
+		width: 170px;
+	}
+
+	/* Donation */
+	.donation {
+		display: flex;
+		justify-content: center;
+	}
+
+	.donation-content {
+		flex-direction: column-reverse;
+	}
+
+	.donation-dog {
+		width: 505px;
+		height: 261px;
+	}
+
+	.donation-content-text {
+		padding-bottom: 60px;
+	}
+
+	/* Footer */
+	.footer-content {
+		padding-top: 30px;
+		max-width: 708px;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		row-gap: 65px;
+	}
+
+	.footer-content-block {
+		padding-top: 0%;
+	}
+}
+
+/* 320*/
+@media screen and (max-width: 767px) {
+
+	.header-nav {
+		min-width: initial;
+		position: relative;
+		top: 2px;
+	}
+
+	.header-nav ul {
+		display: none;
+	}
+
+	#menu-toggle {
+		display: none;
+		opacity: 0;
+	}
+	.menu__btn {
+		display: flex;
+		align-items: center;
+		width: 30px;
+		height: 22px;
+	}
+
+	.menu__btn>span,
+	.menu__btn>span::before,
+	.menu__btn>span::after {
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 2px;
+		background-color: var(--color-primary);;
+	}
+
+	.menu__btn>span::before {
+		content: '';
+		top: -10px;
+	}
+
+	.menu__btn>span::after {
+		content: '';
+		top: 10px;
+	}
+
+	section,
+	footer {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	/* Header */
+	.header {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	/* Start screen */
+	.start-screen-text-content h2 {
+		max-width: 250px;
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 25px;
+		line-height: 130%;
+		letter-spacing: 0.06em;
+		text-align: center;
+		color: var(--color-light-xl);
+	}
+	
+	.start-screen-text-content p {
+		text-align: center;
+	}
+
+	.start-screen-puppy {
+		padding-top: 105px;
+		margin-left: auto;
+
+		/* TODO: add em's */
+		max-width: 260px;
+		max-height: 271px;
+	}
+
+	.start-screen-text-content {
+		padding-bottom: 0px;
+		width: 300px;
+		height: 296px;
+		align-items: center;
+	}
+
+	/* About */
+	.about-content {
+		padding-top: 42px;
+	}
+
+	.about-content-1 {
+		flex-direction: column-reverse;
+		padding-bottom: 42px;
+	}
+
+	.about-content-text {
+		max-width: 270px;
+		min-height: 494px;
+		padding-bottom: 42px;
+	}
+
+	h3 {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 25px;
+		line-height: 130%;
+		letter-spacing: 0.06em;
+		color: var(--color-dark-l);
+		text-align: center;
+	}
+
+	.about-content-text h3 {
+		text-align: center;
+		padding-bottom: 25px;
+	}
+
+	.about-content-text p {
+		text-align: justify;
+	} 
+
+	.about-content-text p:nth-child(2) {
+		padding-bottom: 22px;
+	}
+
+	.about-content-image {
+		max-width: 260px;
+		max-height: 353px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* Pets */
+	.slider-content {
+		max-width: 580px;
+		overflow: hidden;
+		height: 435px;
+		flex-wrap: wrap;
+	}
+
+	/* Help */
+	.help-list {
+		gap: 55px 60px;
+	}
+
+	.help-list-item {
+		width: 130px;
+		height: 87px;
+	}
+
+	/* Donation */
+	.donation {
+		display: flex;
+		justify-content: center;
+	}
+
+	.donation-content {
+		flex-direction: column-reverse;
+	}
+
+	.donation-dog {
+		width: 505px;
+		height: 261px;
+	}
+
+	.donation-content-text {
+		padding-bottom: 60px;
+	}
+
+	/* Footer */
+	.footer-content {
+		padding-top: 30px;
+		max-width: 708px;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		row-gap: 65px;
+	}
+
+	.footer-content-block {
+		padding-top: 0%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 }
