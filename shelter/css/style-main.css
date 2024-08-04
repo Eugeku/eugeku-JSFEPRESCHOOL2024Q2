@@ -352,10 +352,10 @@ h1 {
 
 .pets-main {
 	padding-bottom: 100px;
+ 	padding-top: 80px;
 }
 
 .pets-content-main {
-	padding-top: 80px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -588,6 +588,7 @@ h4.help-name {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	align-items: center;
 }
 
 .credit-card-image {
@@ -768,6 +769,7 @@ h3.footer-content-header {
 
 	.footer-content-block {
 		padding-top: 0%;
+		min-height: 234px;
 	}
 }
 
@@ -904,39 +906,57 @@ h3.footer-content-header {
 		max-height: 353px;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	/* Pets */
 	.slider-content {
-		max-width: 580px;
+		max-width: 270px;
 		overflow: hidden;
 		height: 435px;
 		flex-wrap: wrap;
 	}
 
+	.pets-main-slider {
+		max-width: 270px;
+		height: 507px;
+		flex-wrap: wrap;
+		align-content: space-between;
+		justify-content: space-around;
+	}
+	
+	.pets-main {
+		padding-bottom: 42px;
+		padding-top: 42px;
+	}
+	
+	.pets-content-main {
+        height: 707px;
+	}
+	
+	.pets-content-main h3 {
+		width: auto;
+		height: auto;
+	}
+
+	.prev {
+		order: 1;
+	}
+	
+	.next {
+		order: 2;
+	}
+	
 	/* Help */
+	section.help {
+		padding-right: 15px;
+        padding-left: 15px;
+	}
+
+	.help-content {
+		padding-top: 42px;
+	}
+
 	.help-list {
-		gap: 55px 60px;
+		justify-content: flex-start;
+		gap: 30px 30px;
 	}
 
 	.help-list-item {
@@ -944,23 +964,74 @@ h3.footer-content-header {
 		height: 87px;
 	}
 
+	.help-list-item-image {
+		background-size: contain;
+		height: 50px;
+		width: 50px;
+	}
+
+	.help-list {
+		padding-top: 42px;
+		padding-bottom: 42px;
+	} 
+	
+	h4.help-name {
+		font-size: 15px;
+	}
+
 	/* Donation */
+	.donation-content {
+		flex-direction: column-reverse;
+		padding-top: 42px;
+		padding-bottom: 42px;
+	}
+
 	.donation {
-		display: flex;
 		justify-content: center;
 	}
 
 	.donation-content {
 		flex-direction: column-reverse;
+		max-width: 300px;
+		min-height: 282px;
 	}
 
 	.donation-dog {
-		width: 505px;
-		height: 261px;
+		width: 260px;
+		height: auto;
 	}
 
 	.donation-content-text {
-		padding-bottom: 60px;
+		max-width: 300px;
+		padding-bottom: 42px;
+		align-items: center;
+	}
+
+	.donation-content-text h3 {
+		text-wrap: balance;
+		text-align: center;
+	}
+
+	.donation-content-text h5 {
+		letter-spacing: 0;
+        line-height: 160%;
+        text-align: center;
+	}
+
+	.credit-card-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.credit-card-number {
+		font-size: 15px;
+		line-height: 110%;
+	}
+
+	.legal-info {
+		max-width: 280px;
+		text-align: justify;
 	}
 
 	/* Footer */
@@ -969,22 +1040,29 @@ h3.footer-content-header {
 		max-width: 708px;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		row-gap: 65px;
+		row-gap: 40px;
 	}
 
 	.footer-content-block {
+		height: 208px;
 		padding-top: 0%;
+		align-items: center;
 	}
 
+	.locations {
+		align-items: flex-start;
+		width: auto;
+		height: 222px;
+	}
 
+	h3.footer-content-header {
+		text-align: center;
+		align-self: center;
+		max-width: 270px;
+	}
 
-
-
-
-
-
-
-
-
-
+	.footer-puppy {
+		width: 260px;
+		height: auto;
+	}
 }
