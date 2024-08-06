@@ -262,7 +262,9 @@ h1 {
 }
 
 .start-screen-puppy {
-	height: 100%;
+	/* height: 100%; */
+	max-width: 58.17%;
+	height: auto;
 }
 
 .start-screen-text-content {
@@ -704,8 +706,11 @@ h3.footer-content-header {
 		margin-left: auto;
 
 		/* TODO: add em's */
-		max-width: 569px;
-		max-height: 593px;
+		/* max-width: 569px;
+		max-height: 593px; */
+
+		max-width: 80.37%;
+    	height: auto;
 	}
 
 	.start-screen-text-content {
@@ -851,8 +856,8 @@ h3.footer-content-header {
 		margin-left: auto;
 
 		/* TODO: add em's */
-		max-width: 260px;
-		max-height: 271px;
+		max-width: 86.67%;
+		height: auto;
 	}
 
 	.start-screen-text-content {
