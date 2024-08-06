@@ -242,7 +242,7 @@ h1 {
 /* Start screen */
 .start-screen-wrapper {
 	background: url(../images/backgrounds/start-screen-gradient-background.png);
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .start-screen-content {
@@ -618,7 +618,7 @@ h4.help-name {
 /* Footer */
 .footer-wrapper {
 	background: url(../images/backgrounds/footer-gradient-background.png);
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .footer {
@@ -1044,7 +1044,7 @@ h3.footer-content-header {
 	}
 
 	.footer-content-block {
-		height: 208px;
+		min-height: 208px;
 		padding-top: 0%;
 		align-items: center;
 	}
@@ -1052,7 +1052,7 @@ h3.footer-content-header {
 	.locations {
 		align-items: flex-start;
 		width: auto;
-		height: 222px;
+		min-height: 222px;
 	}
 
 	h3.footer-content-header {
