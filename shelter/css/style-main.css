@@ -823,7 +823,7 @@ h3.footer-content-header {
 		position: absolute;
 		width: 30px;
 		height: 2px;
-		background-color: var(--color-primary);;
+		background-color: var(--color-primary);
 	}
 
 	.menu__btn>span::before {
