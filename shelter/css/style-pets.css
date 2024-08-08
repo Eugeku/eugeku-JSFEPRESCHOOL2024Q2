@@ -13,7 +13,6 @@
 
 	--font-family: "Georgia", sans-serif;
 	--second-family: "Arial", sans-serif;
-	--third-family: "Inter", sans-serif;
 }
 
 body {
@@ -68,9 +67,8 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 80px;
+	padding-top: 5em;
 	padding-bottom: 100px;
-	row-gap: 45px;
 }
 
 h2 {
@@ -85,16 +83,20 @@ h2 {
 }
 
 .cards-container {
-	height: 930px;
+	min-height: 930px;
+	padding-top: 45px;
+    padding-bottom: 45px;
+	gap: 30px 40px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-content: space-around;
 }
 
 .paginator {
-	width: 340px;
+	max-width: 340px;
+	width: 100%;
 	height: 52px;
 	display: flex;
 	flex-direction: row;
@@ -144,4 +146,53 @@ h2 {
 
 .button-paginator.current span {
 	color: var(--color-dark-3xl);
+}
+
+/* 768*/
+@media screen and (max-width: 1027px) {
+
+	.menu__btn>span,
+	.menu__btn>span::before,
+	.menu__btn>span::after {
+		background-color: var(--color-dark-3xl);
+	}
+
+	.pets-content {
+		padding-top: 5em;
+		padding-bottom: 76px;
+	}
+
+	.cards-container {
+		padding-top: 30px;
+		padding-bottom: 40px;
+		padding-left: 64px;
+		padding-right: 64px;
+        max-height: 1350px;
+		gap: 30px 40px;
+		overflow: hidden;
+	}
+
+	.paginator {
+		padding-top: 15px;
+	}
+
+}
+
+/* 320*/
+@media screen and (max-width: 767px) {
+	h2 {
+		font-size: 25px;
+	}
+
+	.pets-content {
+		padding-top: 2.625em;
+		padding-bottom: 2.625em;
+	}
+
+	.cards-container {
+		padding-top: 2.625em;
+		justify-content: center;
+		padding-left: none;
+        padding-right: none; 
+	}
 }
