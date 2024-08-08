@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style-main.css">
     <link rel="icon" href="./images/favicon/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Cozy home. Main">
     <meta name="keywords" content="Cozy home. Pets">
     <script src="./js/common.js"></script>
@@ -21,7 +22,11 @@
                 <p class="header-subtitle">Shelter for pets in Boston</p>
             </div>
             <nav class="header-nav">
-                <ul>
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu__btn" for="menu-toggle">
+                  <span></span>
+                </label>
+                <ul class="menu-list">
                     <li class="active-tab"><a href="./main.html">About the shelter</a></li>
                     <li><a href="./pets.html">Our pets</a></li>
                     <li><a href="#help">Help the shelter</a></li>
