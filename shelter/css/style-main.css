@@ -95,13 +95,13 @@ button,
 button:not(.inactive):not(.current):hover,
 .slide:hover,
 .header-logo:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 	cursor: url(../images/icons/hover-cursor.svg), pointer;
 	box-shadow: 0 4px 4px 0 var(--color-dark-3xl);
 }
 
 .slide:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 	cursor: url(../images/icons/hover-cursor.svg), pointer;
 	box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
@@ -128,7 +128,7 @@ div.slide:hover {
 }
 
 .footer-content-block .footer-content-block-item-wrapper:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 	text-decoration: underline;
 	text-decoration-color: var(--color-primary);
 }
@@ -268,7 +268,7 @@ h1 {
 }
 
 .start-screen-text-content {
-	width: 460px;
+	width: 38.33%;
 	height: 322px;
 	display: flex;
 	flex-direction: column;
@@ -309,7 +309,7 @@ h1 {
 }
 
 .about-content {
-	padding-top: 80px;
+	padding-top: 5em;
 }
 
 .about-content-1 {
@@ -322,12 +322,19 @@ h1 {
 }
 
 .about-content-text {
-	max-width: 430px;
+	width: 50.59%;
 	height: 380px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
+}
+
+.about-content-image {
+	width: 35.29%;
+	height: auto;
+	max-width: 300px;
+	max-height: 408px;
 }
 
 .about-content-text h3 {
@@ -354,7 +361,7 @@ h1 {
 
 .pets-main {
 	padding-bottom: 100px;
- 	padding-top: 80px;
+ 	padding-top: 5em;
 }
 
 .pets-content-main {
@@ -450,7 +457,7 @@ h1 {
 }
 
 .help-content {
-	padding-top: 80px;
+	padding-top: 5em;
 }
 
 .help-list {
@@ -539,7 +546,7 @@ h4.help-name {
 	max-width: 915px;
 	flex: auto;
 	min-height: 282px;
-	padding-top: 80px;
+	padding-top: 5em;
 	padding-bottom: 100px;
 
 	display: flex;
@@ -549,8 +556,8 @@ h4.help-name {
 }
 
 .donation-dog {
-	width: 505px;
-	height: 261px;
+    max-width: 505px;
+    max-height: 261px;
 }
 
 .donation-content-text {
@@ -637,6 +644,7 @@ h4.help-name {
 
 .footer-content {
 	padding-top: 40px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -715,6 +723,7 @@ h3.footer-content-header {
 
 	.start-screen-text-content {
 		padding-bottom: 0px;
+		width: 64.97%;
 	}
 
 	/* About */
@@ -723,8 +732,13 @@ h3.footer-content-header {
 		padding-bottom: 100px;
 	}
 
+	.about-content-image {
+		width: 42.37%;
+	}
+
 	.about-content-text {
-		padding-bottom: 80px;
+		width: 60.73%;
+		padding-bottom: 5em;
 	}
 
 	/* Pets */
@@ -854,33 +868,35 @@ h3.footer-content-header {
 	.start-screen-puppy {
 		padding-top: 105px;
 		margin-left: auto;
-
-		/* TODO: add em's */
-		max-width: 86.67%;
-		height: auto;
+		width: 86.67%;
+        height: auto;
+        max-width: 570px;
 	}
 
 	.start-screen-text-content {
 		padding-bottom: 0px;
-		width: 300px;
+		max-width: 460px;
+    	width: 100%;
 		height: 296px;
+		max-width: 460px;
 		align-items: center;
 	}
 
 	/* About */
 	.about-content {
-		padding-top: 42px;
+		padding-top: 2.625em;
 	}
 
 	.about-content-1 {
 		flex-direction: column-reverse;
-		padding-bottom: 42px;
+		padding-bottom: 2.625em;
 	}
 
 	.about-content-text {
-		max-width: 270px;
+		width: 90%;
+		max-width: 430px;
 		min-height: 494px;
-		padding-bottom: 42px;
+		padding-bottom: 2.625em;
 	}
 
 	h3 {
@@ -891,6 +907,7 @@ h3.footer-content-header {
 		letter-spacing: 0.06em;
 		color: var(--color-dark-l);
 		text-align: center;
+		align-self: center;
 	}
 
 	.about-content-text h3 {
@@ -907,8 +924,7 @@ h3.footer-content-header {
 	}
 
 	.about-content-image {
-		max-width: 260px;
-		max-height: 353px;
+		width: 86.67%;
 	}
 
 	/* Pets */
@@ -928,8 +944,8 @@ h3.footer-content-header {
 	}
 	
 	.pets-main {
-		padding-bottom: 42px;
-		padding-top: 42px;
+		padding-bottom: 2.625em;
+		padding-top: 2.625em;
 	}
 	
 	.pets-content-main {
@@ -956,7 +972,7 @@ h3.footer-content-header {
 	}
 
 	.help-content {
-		padding-top: 42px;
+		padding-top: 2.625em;
 	}
 
 	.help-list {
@@ -976,8 +992,8 @@ h3.footer-content-header {
 	}
 
 	.help-list {
-		padding-top: 42px;
-		padding-bottom: 42px;
+		padding-top: 2.625em;
+		padding-bottom: 2.625em;
 	} 
 	
 	h4.help-name {
@@ -987,8 +1003,8 @@ h3.footer-content-header {
 	/* Donation */
 	.donation-content {
 		flex-direction: column-reverse;
-		padding-top: 42px;
-		padding-bottom: 42px;
+		padding-top: 2.625em;
+		padding-bottom: 2.625em;
 	}
 
 	.donation {
@@ -997,18 +1013,17 @@ h3.footer-content-header {
 
 	.donation-content {
 		flex-direction: column-reverse;
-		max-width: 300px;
 		min-height: 282px;
 	}
 
 	.donation-dog {
-		width: 260px;
+		width: 86.67%;
 		height: auto;
 	}
 
 	.donation-content-text {
 		max-width: 300px;
-		padding-bottom: 42px;
+		padding-bottom: 2.625em;
 		align-items: center;
 	}
 
@@ -1021,6 +1036,10 @@ h3.footer-content-header {
 		letter-spacing: 0;
         line-height: 160%;
         text-align: center;
+	}
+
+	.credit-card {
+		width: 281px;
 	}
 
 	.credit-card-content {
@@ -1067,7 +1086,8 @@ h3.footer-content-header {
 	}
 
 	.footer-puppy {
-		width: 260px;
+		width: 86.67%;
 		height: auto;
+		max-width: 300px;
 	}
 }
