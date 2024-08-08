@@ -151,6 +151,12 @@ h2 {
 /* 768*/
 @media screen and (max-width: 1027px) {
 
+	.menu__btn>span,
+	.menu__btn>span::before,
+	.menu__btn>span::after {
+		background-color: var(--color-dark-3xl);
+	}
+
 	.pets-content {
 		padding-top: 5em;
 		padding-bottom: 76px;
