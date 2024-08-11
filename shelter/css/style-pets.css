@@ -165,8 +165,6 @@ h2 {
 	.cards-container {
 		padding-top: 30px;
 		padding-bottom: 40px;
-		padding-left: 64px;
-		padding-right: 64px;
 		max-height: 1350px;
 		gap: 30px 40px;
 		overflow: hidden;
@@ -176,7 +174,6 @@ h2 {
 	.paginator {
 		padding-top: 15px;
 	}
-
 }
 
 /* 320*/
@@ -193,8 +190,6 @@ h2 {
 	.cards-container {
 		padding-top: 2.625em;
 		justify-content: center;
-		padding-left: none;
-		padding-right: none;
 		align-content: space-around;
 	}
 }
