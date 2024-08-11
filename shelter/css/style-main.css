@@ -1102,3 +1102,12 @@ h3.footer-content-header {
 		max-width: 300px;
 	}
 }
+
+@media screen and (max-width: 375px) {
+
+	/* Pets */
+	.slider-content {
+		padding: 50px 15px;
+		margin: -50px -15px;
+	}
+}
