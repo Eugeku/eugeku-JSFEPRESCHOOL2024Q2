@@ -95,13 +95,13 @@ button,
 button:not(.inactive):not(.current):hover,
 .slide:hover,
 .header-logo:hover {
-	transform: scale(1.1);
+	transform: scale(1.04);
 	cursor: url(../images/icons/hover-cursor.svg), pointer;
 	box-shadow: 0 4px 4px 0 var(--color-dark-3xl);
 }
 
 .slide:hover {
-	transform: scale(1.1);
+	transform: scale(1.04);
 	cursor: url(../images/icons/hover-cursor.svg), pointer;
 	box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
@@ -128,7 +128,7 @@ div.slide:hover {
 }
 
 .footer-content-block .footer-content-block-item-wrapper:hover {
-	transform: scale(1.1);
+	transform: scale(1.04);
 	text-decoration: underline;
 	text-decoration-color: var(--color-primary);
 }
@@ -378,7 +378,8 @@ h1 {
 }
 
 .slider-content {
-	width: 990px;
+	max-width: 990px;
+    width: 90%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -743,6 +744,10 @@ h3.footer-content-header {
 
 	/* Pets */
 	.slider-content {
+		padding: 50px 20px;
+		margin: -50px -20px;
+    	row-gap: 50px;
+		width: 100%;
 		max-width: 580px;
 		overflow: hidden;
 		height: 435px;
@@ -895,7 +900,7 @@ h3.footer-content-header {
 	.about-content-text {
 		width: 90%;
 		max-width: 430px;
-		min-height: 494px;
+		height: auto;
 		padding-bottom: 2.625em;
 	}
 
@@ -913,6 +918,7 @@ h3.footer-content-header {
 	.about-content-text h3 {
 		text-align: center;
 		padding-bottom: 25px;
+		height: 64px;
 	}
 
 	.about-content-text p {
@@ -929,6 +935,9 @@ h3.footer-content-header {
 
 	/* Pets */
 	.slider-content {
+		padding: 50px 50px;
+		margin: -50px -50px;
+		width: 100%;
 		max-width: 270px;
 		overflow: hidden;
 		height: 435px;

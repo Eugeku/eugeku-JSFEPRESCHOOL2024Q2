@@ -91,7 +91,7 @@ h2 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-content: space-around;
+	align-content: center;
 }
 
 .paginator {
@@ -170,6 +170,7 @@ h2 {
         max-height: 1350px;
 		gap: 30px 40px;
 		overflow: hidden;
+		align-content: space-around;
 	}
 
 	.paginator {
@@ -194,5 +195,6 @@ h2 {
 		justify-content: center;
 		padding-left: none;
         padding-right: none; 
+		align-content: space-around;
 	}
 }
