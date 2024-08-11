@@ -361,7 +361,7 @@ h1 {
 
 .pets-main {
 	padding-bottom: 100px;
- 	padding-top: 5em;
+	padding-top: 5em;
 }
 
 .pets-content-main {
@@ -379,7 +379,7 @@ h1 {
 
 .slider-content {
 	max-width: 990px;
-    width: 90%;
+	width: 90%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -557,8 +557,8 @@ h4.help-name {
 }
 
 .donation-dog {
-    max-width: 505px;
-    max-height: 261px;
+	max-width: 505px;
+	max-height: 261px;
 }
 
 .donation-content-text {
@@ -684,6 +684,7 @@ h3.footer-content-header {
 
 /* 768*/
 @media screen and (max-width: 1027px) {
+
 	section,
 	footer {
 		padding-right: 30px;
@@ -719,7 +720,7 @@ h3.footer-content-header {
 		max-height: 593px; */
 
 		max-width: 80.37%;
-    	height: auto;
+		height: auto;
 	}
 
 	.start-screen-text-content {
@@ -746,7 +747,7 @@ h3.footer-content-header {
 	.slider-content {
 		padding: 50px 20px;
 		margin: -50px -20px;
-    	row-gap: 50px;
+		row-gap: 50px;
 		width: 100%;
 		max-width: 580px;
 		overflow: hidden;
@@ -814,6 +815,7 @@ h3.footer-content-header {
 		display: none;
 		opacity: 0;
 	}
+
 	.menu__btn {
 		display: flex;
 		align-items: center;
@@ -865,7 +867,7 @@ h3.footer-content-header {
 		text-align: center;
 		color: var(--color-light-xl);
 	}
-	
+
 	.start-screen-text-content p {
 		text-align: center;
 	}
@@ -874,14 +876,14 @@ h3.footer-content-header {
 		padding-top: 105px;
 		margin-left: auto;
 		width: 86.67%;
-        height: auto;
-        max-width: 570px;
+		height: auto;
+		max-width: 570px;
 	}
 
 	.start-screen-text-content {
 		padding-bottom: 0px;
 		max-width: 460px;
-    	width: 100%;
+		width: 100%;
 		height: 296px;
 		max-width: 460px;
 		align-items: center;
@@ -923,7 +925,7 @@ h3.footer-content-header {
 
 	.about-content-text p {
 		text-align: justify;
-	} 
+	}
 
 	.about-content-text p:nth-child(2) {
 		padding-bottom: 22px;
@@ -951,16 +953,16 @@ h3.footer-content-header {
 		align-content: space-between;
 		justify-content: space-around;
 	}
-	
+
 	.pets-main {
 		padding-bottom: 2.625em;
 		padding-top: 2.625em;
 	}
-	
+
 	.pets-content-main {
-        height: 707px;
+		height: 707px;
 	}
-	
+
 	.pets-content-main h3 {
 		width: auto;
 		height: auto;
@@ -969,15 +971,15 @@ h3.footer-content-header {
 	.prev {
 		order: 1;
 	}
-	
+
 	.next {
 		order: 2;
 	}
-	
+
 	/* Help */
 	section.help {
 		padding-right: 15px;
-        padding-left: 15px;
+		padding-left: 15px;
 	}
 
 	.help-content {
@@ -1003,8 +1005,8 @@ h3.footer-content-header {
 	.help-list {
 		padding-top: 2.625em;
 		padding-bottom: 2.625em;
-	} 
-	
+	}
+
 	h4.help-name {
 		font-size: 15px;
 	}
@@ -1043,8 +1045,8 @@ h3.footer-content-header {
 
 	.donation-content-text h5 {
 		letter-spacing: 0;
-        line-height: 160%;
-        text-align: center;
+		line-height: 160%;
+		text-align: center;
 	}
 
 	.credit-card {
