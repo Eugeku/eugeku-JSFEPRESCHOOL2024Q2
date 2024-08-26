@@ -27,6 +27,10 @@ h1 {
 	color: var(--color-dark-3xl);
 }
 
+.header-nav li:hover a {
+	color: var(--color-dark-3xl);
+}
+
 .header-nav li a {
 	font-family: var(--second-family);
 	font-weight: 400;
@@ -135,13 +139,6 @@ h2 {
 
 /* 768*/
 @media screen and (max-width: 1027px) {
-
-	.menu__btn>span,
-	.menu__btn>span::before,
-	.menu__btn>span::after {
-		background-color: var(--color-dark-3xl);
-	}
-
 	.pets-content {
 		padding-top: 5em;
 		padding-bottom: 76px;
@@ -165,6 +162,18 @@ h2 {
 @media screen and (max-width: 767.98px) {
 	h2 {
 		font-size: 25px;
+	}
+
+	.menu-btn>span,
+	.menu-btn>span::before,
+	.menu-btn>span::after {
+		background-color: var(--color-dark-3xl);
+	}
+
+	.menu-btn.open>span,
+	.menu-btn.open>span::before,
+	.menu-btn.open>span::after {
+		background-color: var(--color-primary);
 	}
 
 	.pets-content {

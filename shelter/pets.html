@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Cozy home. Pets">
     <meta name="keywords" content="Cozy home. Pets">
+    <script src="./js/pets.js"></script>
     <script src="./js/common.js"></script>
 </head>
 
@@ -23,17 +24,27 @@
             </div>
             <nav class="header-nav">
                 <input id="menu-toggle" type="checkbox">
-                <label class="menu__btn" for="menu-toggle">
-                  <span></span>
+                <label id="menu-btn" class="menu-btn" for="menu-toggle">
+                    <span></span>
                 </label>
                 <ul class="menu-list">
                     <li><a href="./main.html">About the shelter</a></li>
                     <li class="active-tab"><a href="./pets.html">Our pets</a></li>
-                    <li><a href="#help">Help the shelter</a></li>
+                    <li><a href="./main.html#help">Help the shelter</a></li>
                     <li><a href="#footer">Contacts</a></li>
                 </ul>
             </nav>
         </header>
+        <div class="mobile-menu" id="mobile-menu">
+            <nav class="header-nav-mobile">
+                <ul class="menu-list-mobile">
+                    <li><a href="./main.html">About the shelter</a></li>
+                    <li class="active-tab"><a href="./pets.html">Our pets</a></li>
+                    <li><a href="./main.html#help">Help the shelter</a></li>
+                    <li><a href="#footer">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <div class="pets-wrapper">
         <section class="pets">
