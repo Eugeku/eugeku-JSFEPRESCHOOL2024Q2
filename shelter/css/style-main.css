@@ -1,19 +1,4 @@
-:root {
-	--color-light-xl: rgb(255, 255, 255);
-	--color-light-l: rgb(246, 246, 246);
-	--color-light-s: rgb(250, 250, 250);
-	--color-dark-s: rgb(205, 205, 205);
-	--color-dark-m: rgb(178, 178, 178);
-	--color-dark-l: rgb(84, 84, 84);
-	--color-dark-xl: rgb(76, 76, 76);
-	--color-dark-2xl: rgb(68, 68, 68);
-	--color-dark-3xl: rgb(41, 41, 41);
-	--color-primary: rgb(241, 205, 179);
-	--color-primary-light: rgb(253, 220, 196);
-
-	--font-family: "Georgia", sans-serif;
-	--second-family: "Arial", sans-serif;
-}
+@import url("./common.css");
 
 html {
 	scroll-behavior: smooth;
@@ -799,7 +784,7 @@ h3.footer-content-header {
 }
 
 /* 320*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98sspx) {
 
 	.header-nav {
 		min-width: initial;
