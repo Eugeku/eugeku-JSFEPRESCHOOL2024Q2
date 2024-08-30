@@ -1,4 +1,8 @@
+import pets from './data/pets.json' with {type: 'json'};
+
+// Event listeners
 document.addEventListener("DOMContentLoaded", function () {
+    // Links
     document.getElementById("mail-to").addEventListener("click", function () {
         document.location.href = 'mailto:email@shelter.com';
     });
@@ -14,14 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("adress2").addEventListener("click", function () {
         window.open('https://www.google.com/maps/search/18+South+Park,+London/@51.4206765,-0.1999813,17.93z?entry=ttu');
     });
-    
+
     // Burger
     const menuToggle = document.getElementById('menu-toggle'); //checkbox
     const menuBtn = document.getElementById('menu-btn'); // menu-btn
     const mobileMenu = document.getElementById('mobile-menu'); // mobile menu
     const overlay = document.createElement('div'); // overlay
-
     overlay.className = 'overlay';
+    
     document.body.appendChild(overlay);
 
     menuBtn.addEventListener('click', function () {
@@ -40,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.style.overflow = 'auto';
     });
 
-    // Закрытие меню при клике на ссылку
     mobileMenu.addEventListener('click', function (e) {
         if (e.target.tagName === 'A') {
             menuBtn.classList.remove('open');
