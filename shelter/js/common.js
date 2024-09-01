@@ -1,4 +1,4 @@
-import pets from './data/pets.json' with {type: 'json'};
+import { burgerMenu } from './burger/burger.js';
 
 // Event listeners
 document.addEventListener("DOMContentLoaded", function () {
@@ -19,38 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
         window.open('https://www.google.com/maps/search/18+South+Park,+London/@51.4206765,-0.1999813,17.93z?entry=ttu');
     });
 
-    // Burger
-    const menuToggle = document.getElementById('menu-toggle'); //checkbox
-    const menuBtn = document.getElementById('menu-btn'); // menu-btn
-    const mobileMenu = document.getElementById('mobile-menu'); // mobile menu
-    const overlay = document.createElement('div'); // overlay
-    overlay.className = 'overlay';
-    
-    document.body.appendChild(overlay);
-
-    menuBtn.addEventListener('click', function () {
-        menuBtn.classList.toggle('open');
-        mobileMenu.classList.toggle('open');
-        overlay.classList.toggle('active');
-        document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : 'auto';
-        menuToggle.checked = mobileMenu.classList.contains('open') ? false : true;
-    });
-
-    overlay.addEventListener('click', function () {
-        menuBtn.classList.remove('open');
-        menuToggle.checked = false;
-        mobileMenu.classList.remove('open');
-        overlay.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    });
-
-    mobileMenu.addEventListener('click', function (e) {
-        if (e.target.tagName === 'A') {
-            menuBtn.classList.remove('open');
-            menuToggle.checked = false;
-            mobileMenu.classList.remove('open');
-            overlay.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-    });
+    burgerMenu();
 });
