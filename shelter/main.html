@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Cozy home. Main">
     <meta name="keywords" content="Cozy home. Pets">
-    <script src="./js/common.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/estimations.js"></script>
+    <script type="module" src="./js/common.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/estimations.js"></script>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
             </div>
             <nav class="header-nav">
                 <input id="menu-toggle" type="checkbox">
-                <label class="menu__btn" for="menu-toggle">
-                  <span></span>
+                <label id="menu-btn" class="menu-btn" for="menu-toggle">
+                    <span></span>
                 </label>
                 <ul class="menu-list">
                     <li class="active-tab"><a href="./main.html">About the shelter</a></li>
@@ -35,6 +35,16 @@
                 </ul>
             </nav>
         </header>
+        <div class="mobile-menu" id="mobile-menu">
+            <nav class="header-nav-mobile">
+                <ul class="menu-list-mobile">
+                    <li class="active-tab"><a href="./main.html">About the shelter</a></li>
+                    <li><a href="./pets.html">Our pets</a></li>
+                    <li><a href="#help">Help the shelter</a></li>
+                    <li><a href="#footer">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <div class="start-screen-wrapper">
         <section class="start-screen">
@@ -86,25 +96,13 @@
             <div class="pets-content-main">
                 <h3>Our friends who<br>are looking for a house</h3>
                 <div class="pets-main-slider">
-                    <button class="slder-navigation-button prev"></button>
-                    <div class="slider-content">
-                        <div class="slide">
-                            <img class="slide-image" src="./images/dogs/pets-katrine.png" alt="pets-katrine">
-                            <div class="pet-name">Katrine</div>
-                            <button class="button-secondary">Learn more</button>
-                        </div>
-                        <div class="slide">
-                            <img class="slide-image" src="./images/dogs/pets-jennifer.png" alt="pets-jennifer">
-                            <div class="pet-name">Jennifer</div>
-                            <button class="button-secondary">Learn more</button>
-                        </div>
-                        <div class="slide">
-                            <img class="slide-image" src="./images/dogs/pets-woody.png" alt="pets-woody">
-                            <div class="pet-name">Woody</div>
-                            <button class="button-secondary">Learn more</button>
+                    <button class="slider-navigation-button prev"></button>
+                    <div class="slider-content-wrapper">
+                        <div class="slider-content">
+                            <!-- Slides will be inserted here dynamically -->
                         </div>
                     </div>
-                    <button class="slder-navigation-button next"></button>
+                    <button class="slider-navigation-button next"></button>
                 </div>
                 <button id="get-to-know-rest-button" class="button-primary pets-button">Get to know the
                     rest</button>
