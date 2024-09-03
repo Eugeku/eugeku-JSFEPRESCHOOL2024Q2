@@ -1,4 +1,8 @@
+import { burgerMenu } from './burger/burger.js';
+
+// Event listeners
 document.addEventListener("DOMContentLoaded", function () {
+    // Links
     document.getElementById("mail-to").addEventListener("click", function () {
         document.location.href = 'mailto:email@shelter.com';
     });
@@ -14,4 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("adress2").addEventListener("click", function () {
         window.open('https://www.google.com/maps/search/18+South+Park,+London/@51.4206765,-0.1999813,17.93z?entry=ttu');
     });
+
+    burgerMenu();
 });

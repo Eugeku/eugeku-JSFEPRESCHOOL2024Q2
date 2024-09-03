@@ -1,4 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
+import pets from './data/pets.json' with {type: 'json'};
+import { slider } from './slider/slider.js';
+
+// Event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    // Links
     document.getElementById("header-logo-main").addEventListener("click", function () {
         document.location.href = '#';
     });
@@ -14,4 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("credit-card").addEventListener("click", function () {
         document.location.href = '#';
     });
+
+    slider();
 });
