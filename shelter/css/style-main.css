@@ -50,7 +50,8 @@ body,
 .header-nav li.active-tab a:hover,
 .header-nav li.active-tab a:active,
 .header-nav li.active-tab:hover,
-.header-nav li.active-tab:active {
+.header-nav li.active-tab:active,
+.button-paginator.current:hover {
 	cursor: url(../images/icons/normal-cursor.svg), pointer !important;
 }
 
