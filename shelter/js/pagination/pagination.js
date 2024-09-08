@@ -15,8 +15,7 @@ let slideArray = [];
 let currentPage = 1;
 
 function initPages() {
-    let array = [].concat(...Array(6).fill(petsData));
-    slideArray = slideArray.length == 0 ? partitionAndSortPets(array, 8) : slideArray;
+    slideArray = slideArray.length == 0 ? partitionAndSortPets([].concat(...Array(6).fill(petsData)), 8) : slideArray;
     currentPage = 1;
     renderSliderContent(slideArray);
     changeCurrentPageButton();
@@ -96,15 +95,14 @@ function renderSliderContent(cards) {
             </div>
     `).join('');
     renderContent(sliderContent, cardsHtml);
-
-    let slides = document.querySelectorAll('.slide');
-    slides.forEach((slide) => {
-        slide.addEventListener('click', () => aa(slide));
-    });
+    addClickEventListeners();
 }
 
-function aa(slide) {
-    cardClick(slide);
+function addClickEventListeners() {
+    let slides = document.querySelectorAll('.slide');
+    slides.forEach((slide) => {
+        slide.addEventListener('click', () => cardClick(slide));
+    });
 }
 
 function onePageForward() {
