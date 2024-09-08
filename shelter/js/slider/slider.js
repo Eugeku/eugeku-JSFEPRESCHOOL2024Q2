@@ -9,13 +9,13 @@ let previousSlideCards = { direction: null, previousSlides: [] };
 let currentSlideCards = [];
 
 function getRandomCards(count, previousSlides) {
-    const filteredCards = petsData.filter(card => !previousSlides.includes(card));
-    const shuffledCards = filteredCards.sort(() => 0.5 - Math.random());
+    let filteredCards = petsData.filter(card => !previousSlides.includes(card));
+    let shuffledCards = filteredCards.sort(() => 0.5 - Math.random());
     return shuffledCards.slice(0, count);
 }
 
 function renderSliderContent(cards) {
-    const cardsHtml = cards.map(card => `
+    let cardsHtml = cards.map(card => `
             <div class="slide">
                 <img class="slide-image" src="${card.img}" alt="${card.name}">
                 <div class="pet-name">${card.name}</div>
@@ -23,28 +23,26 @@ function renderSliderContent(cards) {
             </div>
     `).join('');
     renderContent(sliderContent, cardsHtml);
-    const slides = document.querySelectorAll('.slide');
-    // Loop through each slide and add a click event listener
+    addClickEventListeners();
+}
+
+function addClickEventListeners() {
+    let slides = document.querySelectorAll('.slide');
     slides.forEach((slide) => {
-        slide.addEventListener('click', () => aa(slide));
+        slide.addEventListener('click', () => cardClick(slide));
     });
 }
 
-function aa(slide) {
-    const petName = slide.querySelector('.pet-name').textContent;
-    cardClick(slide);
-}
-
 function initSlider() {
-    const visibleCards = getVisibleCardsCount();
-    const initialCards = currentSlideCards.length == 0 ? getRandomCards(visibleCards, previousSlideCards.previousSlides) : currentSlideCards;
+    let visibleCards = getVisibleCardsCount();
+    let initialCards = currentSlideCards.length == 0 ? getRandomCards(visibleCards, previousSlideCards.previousSlides) : currentSlideCards;
     currentSlideCards = initialCards;
     previousSlideCards.direction = previousSlideCards.direction;
     renderSliderContent(initialCards);
 }
 
 function slide(direction) {
-    const visibleCards = getVisibleCardsCount();
+    let visibleCards = getVisibleCardsCount();
     let newCards;
 
     do {
@@ -99,7 +97,7 @@ function animateSlide(newCards, direction) {
 
 // Workaround for case if we initialized slider for resolution 320 and then resize to 1280
 function getVisibleCardsCount() {
-    const width = window.innerWidth;
+    let width = window.innerWidth;
     if (width >= 768) {
         return 3;
     } else if (width >= 320) {

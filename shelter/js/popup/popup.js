@@ -3,7 +3,7 @@ import overlay from '../overlay/overlay.js';
 import { renderContent } from '../utils.js';
 
 // Popup
-const popup = document.createElement('div'); // popup
+const popup = document.createElement('div');
 popup.className = 'popup';
 document.body.appendChild(popup);
 
@@ -32,7 +32,7 @@ export function cardClick(slide) {
         </div>
     `;
     renderContent(popup, popupModal);
-    const close = document.getElementsByClassName('popup-button-close')[0];
+    let close = document.getElementsByClassName('popup-button-close')[0];
     close.addEventListener('click', () => closeCard());
     overlay.getOverlayElement().addEventListener('click', () => closeCard());
 }
@@ -42,7 +42,6 @@ function closeCard() {
     document.body.style.overflow = 'auto';
     overlay.hide();
 }
-
 
 function findPetByName(pets, name) {
     return pets.filter(pet => pet.name.toLowerCase() == name.toLowerCase())[0];

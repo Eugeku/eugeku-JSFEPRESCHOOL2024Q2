@@ -1,4 +1,3 @@
-import pets from './data/pets.json' with {type: 'json'};
 import { slider } from './slider/slider.js';
 
 // Event listeners
