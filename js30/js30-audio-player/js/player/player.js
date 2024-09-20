@@ -5,6 +5,7 @@ const playButton = document.querySelector('.play');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 const repeatButton = document.querySelector('.repeat');
+const volumeButton = document.querySelector('.sound');
 const artistName = document.querySelector('.artist-name');
 const songName = document.querySelector('.song-name');
 const playerImage = document.querySelector('.audio-player');
@@ -20,6 +21,8 @@ let isPlaying = false;
 let isRepeating = false;
 let playerListItems = [];
 let isDragging = false;
+let isMute = false;
+let volumeValue = 1;
 
 function loadSong(song) {
     const previousSong = findSongListItemByClassName(playerListItems, activeSongClass);
@@ -110,6 +113,26 @@ function toggleRepeat() {
     repeatButton.classList.toggle('active');
 }
 
+function muteSong() {
+    audio.volume = 0;
+    isMute = true;
+    volumeButton.innerHTML = '<img src="./assets/icon/sound_mute.svg" alt="sound_mute">';
+}
+
+function unmuteSong() {
+    audio.volume = volumeValue;
+    isMute = false;
+    volumeButton.innerHTML = '<img src="./assets/icon/sound_high.svg" alt="sound_high">';
+}
+
+function toggleSound() {
+    if (isMute) {
+        unmuteSong();
+    } else {
+        muteSong();
+    }
+}
+
 function updateProgressBar() {
     const progressPercent = (audio.currentTime / audio.duration) * 100;
     const currentTime = isNaN(audio.currentTime) || audio.currentTime == null 
@@ -156,8 +179,9 @@ export function player() {
     playButton.addEventListener('click', () => togglePlayPause());
     prevButton.addEventListener('click', () => prevButtonClick());
     nextButton.addEventListener('click', () => nextButtonClick());
-    progressBarWrapper.addEventListener('click', (e) => setProgress(e));
     repeatButton.addEventListener('click', () => toggleRepeat());
+    volumeButton.addEventListener('click', () => toggleSound());
+    progressBarWrapper.addEventListener('click', (e) => setProgress(e));
     audio.addEventListener('ended', () => autoPlay());
     audio.addEventListener('timeupdate', () => updateProgressBar());
     progressBarWrapper.addEventListener('mousedown', () => setDragging(true));
