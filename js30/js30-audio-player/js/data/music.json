@@ -1,14 +1,51 @@
 [
     {
-      "name": "Beyonce",
-      "song-name" : "Don't Hurt Yourself",
+      "id": "id-1",
+      "artist": "Beyonce",
+      "title" : "Don't Hurt Yourself",
       "src": "./assets/music/beyonce.mp3",
       "img": "./assets/image/2song.png"
     },
     {
-      "name": "Dua Lipa",
-      "song-name" : "Don't Start Now",
+      "id": "id-2",
+      "artist": "Dua Lipa",
+      "title" : "Don't Start Now",
       "src": "./assets/music/dualipa.mp3",
       "img": "./assets/image/1song.png"
+    },
+    {
+      "id": "id-3",
+      "artist": "Ana Tijoux",
+      "title" : "1977",
+      "src": "./assets/music/ana-tijoux-1977.mp3",
+      "img": "./assets/image/AnaTijoux.png"
+    },
+    {
+      "id": "id-4",
+      "artist": "Tsukasa Saitoh",
+      "title" : "The Final Battle",
+      "src": "./assets/music/elden-beast.mp3",
+      "img": "./assets/image/eldenBeats.png"
+    },
+    {
+      "id": "id-5",
+      "artist": "Yuka Kitamura",
+      "title" : "Renalla, Quin Of The Full Moon",
+      "src": "./assets/music/rennala.mp3",
+      "img": "./assets/image/renala.png"
+    },
+    {
+      "id": "id-6",
+      "artist": "Ana Tijoux",
+      "title" : "1977",
+      "src": "./assets/music/ana-tijoux-1977.mp3",
+      "img": "./assets/image/AnaTijoux.png"
+    },
+    {
+      "id": "id-7",
+      "artist": "Ana Tijoux",
+      "title" : "1977",
+      "src": "./assets/music/ana-tijoux-1977.mp3",
+      "img": "./assets/image/AnaTijoux.png"
     }
   ]
