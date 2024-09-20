@@ -49,8 +49,21 @@ function loadSongList(songs) {
         songlist += `<li id="${element.id}">${element.artist} - ${element.title}</li>`
     });
     playerList.innerHTML = songlist;
-    playerListItems = document.querySelectorAll('.audio-player-list ul li');
+    listItemEventListener();
     loadSong(songs[songIndex]);
+}
+
+function listItemEventListener() {
+    playerListItems = document.querySelectorAll('.audio-player-list ul li');
+
+
+    playerListItems.forEach(element => {
+        const song = findSongListItemById(songs, element.id);
+        element.addEventListener('click', () => {
+            loadSong(song);
+            playSong();
+        });
+    })
 }
 
 function playSong() {
