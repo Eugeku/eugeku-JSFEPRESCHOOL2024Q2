@@ -1,11 +1,8 @@
 import { player } from './player/player.js';
+import { estimations } from './estimations.js';
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', () => {
-    // Links
-    // document.getElementById("header-logo-main").addEventListener("click", function () {
-    //     document.location.href = '#';
-    // });
-
     player();
+    estimations();
 });
