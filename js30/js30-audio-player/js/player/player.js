@@ -58,8 +58,6 @@ function loadSongList(songs) {
 
 function listItemEventListener() {
     playerListItems = document.querySelectorAll('.audio-player-list ul li');
-
-
     playerListItems.forEach(element => {
         const song = findSongListItemById(songs, element.id);
         element.addEventListener('click', () => {
@@ -135,12 +133,12 @@ function toggleSound() {
 
 function updateProgressBar() {
     const progressPercent = (audio.currentTime / audio.duration) * 100;
-    const currentTime = isNaN(audio.currentTime) || audio.currentTime == null 
-    ? `0:00` 
-    : `${Math.floor(audio.currentTime / 60)}:${String(Math.floor(audio.currentTime % 60)).padStart(2, '0')}`;
-    const duration = isNaN(audio.duration) || audio.duration == null 
-    ? `0:00` 
-    : `${Math.floor(audio.duration / 60)}:${String(Math.floor(audio.duration % 60)).padStart(2, '0')}`;
+    const currentTime = isNaN(audio.currentTime) || audio.currentTime == null
+        ? `0:00`
+        : `${Math.floor(audio.currentTime / 60)}:${String(Math.floor(audio.currentTime % 60)).padStart(2, '0')}`;
+    const duration = isNaN(audio.duration) || audio.duration == null
+        ? `0:00`
+        : `${Math.floor(audio.duration / 60)}:${String(Math.floor(audio.duration % 60)).padStart(2, '0')}`;
 
     progressBar.style.width = `${progressPercent}%`;
     progressBar.innerHTML = `<pre> ${currentTime} / ${duration}</pre>`
