@@ -36,7 +36,7 @@ function loadSong(song) {
     previousSong?.classList.remove(activeSongClass);
     nextSong.classList.add(activeSongClass);
     nextSong.scrollIntoView();
-    songIndex = music.indexOf(song);
+    songIndex = songs.indexOf(song);
 }
 
 function findSongListItemById(playerListItems, id) {
