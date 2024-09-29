@@ -154,6 +154,16 @@ header {
 	vertical-align: middle;
 }
 
+.mailto {
+	max-width: 15em;
+    width: 100%;
+}
+
+.github {
+	max-width: 5em;
+	width: 100%;
+}
+
 /* Interactions */
 button:hover, .count-select:hover {
 	cursor: pointer;
