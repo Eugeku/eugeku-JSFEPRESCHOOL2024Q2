@@ -1,17 +1,8 @@
 :root {
-	--color-light-xl: rgb(255, 255, 255);
-	--color-light-l: rgb(246, 246, 246);
-	--color-light-s: rgb(250, 250, 250);
-	--color-dark-s: rgb(205, 205, 205);
-	--color-dark-m: rgb(178, 178, 178);
-	--color-dark-l: rgb(84, 84, 84);
-	--color-dark-xl: rgb(76, 76, 76);
-	--color-dark-2xl: rgb(68, 68, 68);
-	--color-dark-3xl: rgb(41, 41, 41);
-	--color-primary: rgb(241, 205, 179);
-	--color-primary-light: rgb(253, 220, 196);
+	--color-light: rgb(255, 255, 255);
+	--color-red: rgb(255, 0, 0);
+	--color-blue: rgb(95, 158, 160);
 	--font-family: "Georgia", sans-serif;
-	--second-family: "Arial", sans-serif;
 }
 
 html {
@@ -19,10 +10,11 @@ html {
 }
 
 body {
-	background: var(--color-light-xl);
 	min-height: 100vh;
     display: flex;
     flex-direction: column;
+	font-family: var(--font-family);
+	background: var(--color-light);
 }
 
 section,
@@ -36,17 +28,17 @@ footer {
 header {
 	font-size: 2em;
     padding: 10px 10px 30px 10px;
-	color: white;
+	color: var(--color-light);
 	text-align: center;
 }
 
 .header-wrapper, .footer-wrapper {
-	background-color: rgb(95, 158, 160);
+	background-color: var(--color-blue);
 }
 
 /* Section */
 .section-wrapper {
-	margin: auto;
+	margin: 0 auto;
 }
 
 .main-content {
@@ -56,6 +48,47 @@ header {
     justify-content: center;
     align-items: center;
 	flex-direction: column;
+	border-radius: 1em;
+}
+
+.controls {
+	margin: 1em;
+    display: flex;
+	justify-content: flex-end;
+    align-items: center;
+}
+
+.search-input {
+	width: 100%;
+    max-width: 25em;
+    height: 2em;
+	border-radius: 1em;
+	font-family: var(--font-family);
+}
+
+.clear-button, .search-button {
+	border: none;
+    height: 2em;
+    width: 2em;
+	opacity: 0.5;
+	background-size: contain;
+	background-color: var(--color-light);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.clear-button {
+	background-image: url(../assets/icon/delete.svg);
+}
+
+.search-button {
+	margin-left: -5em;
+	background-image: url(../assets/icon/search.svg);
+}
+
+.count-select {
+	margin-left: 2em;
+    height: 2em;
 	border-radius: 1em;
 }
 
@@ -75,7 +108,17 @@ header {
 	cursor: pointer;
 }
 
+.error-handler {
+	display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+}
 
+.error-message {
+	color: var(--color-red);
+}
 
 /* Footer */
 .footer {
@@ -86,9 +129,13 @@ header {
     justify-content: space-between;
 }
 
+.footer-wrapper {
+	margin-top: auto;
+}
+
 .footer a, .footer div  {
 	font-family: var(--font-family);
-	color: var(--color-light-xl);	
+	color: var(--color-light);	
 }
 
 .footer a:hover {
@@ -105,4 +152,10 @@ header {
 	height: 5em;
 	text-align: left;
 	vertical-align: middle;
+}
+
+/* Interactions */
+button:hover, .count-select:hover {
+	cursor: pointer;
+	opacity: 1;
 }

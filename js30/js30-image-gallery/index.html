@@ -26,12 +26,19 @@
 
         <section>
             <div class="controls">
-                <input type="text" class="search-input" placeholder="Search for images..." autofocus
+                <input type="text" class="search-input" autofocus
                     autocomplete="off" />
-                <button class="clear-button">1</button>
-                <button class="search-button">2</button>
+                    <button class="search-button"></button>
+                <button class="clear-button"></button>
+                <select class="count-select" id="count-select">
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                    <option value="15">15</option>
+                    <option value="24">24</option>
+                  </select>
             </div>
             <div class="image-gallery"></div>
+            <div class="error-handler"></div>
         </section>
     </div>
     <div class="footer-wrapper">
