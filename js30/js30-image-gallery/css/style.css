@@ -11,8 +11,8 @@ html {
 
 body {
 	min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	font-family: var(--font-family);
 	background: var(--color-light);
 }
@@ -27,12 +27,13 @@ footer {
 /* Header */
 header {
 	font-size: 2em;
-    padding: 10px 10px 30px 10px;
+	padding: 10px 10px 30px 10px;
 	color: var(--color-light);
 	text-align: center;
 }
 
-.header-wrapper, .footer-wrapper {
+.header-wrapper,
+.footer-wrapper {
 	background-color: var(--color-blue);
 }
 
@@ -42,34 +43,35 @@ header {
 }
 
 .main-content {
-    background-repeat: no-repeat;
-    background-size: contain;
+	background-repeat: no-repeat;
+	background-size: contain;
 	display: flex;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	border-radius: 1em;
 }
 
 .controls {
 	margin: 1em;
-    display: flex;
+	display: flex;
 	justify-content: flex-end;
-    align-items: center;
+	align-items: center;
 }
 
 .search-input {
 	width: 100%;
-    max-width: 25em;
-    height: 2em;
+	max-width: 25em;
+	height: 2em;
 	border-radius: 1em;
 	font-family: var(--font-family);
 }
 
-.clear-button, .search-button {
+.clear-button,
+.search-button {
 	border: none;
-    height: 2em;
-    width: 2em;
+	height: 2em;
+	width: 2em;
 	opacity: 0.5;
 	background-size: contain;
 	background-color: var(--color-light);
@@ -88,16 +90,16 @@ header {
 
 .count-select {
 	margin-left: 2em;
-    height: 2em;
+	height: 2em;
 	border-radius: 1em;
 }
 
 .image-gallery {
 	gap: 1em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .image-gallery .img {
@@ -110,10 +112,10 @@ header {
 
 .error-handler {
 	display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    height: 5em;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	height: 5em;
 }
 
 .error-message {
@@ -122,24 +124,25 @@ header {
 
 /* Footer */
 .footer {
-	font-size: .8em;	
+	font-size: .8em;
 	padding: 15px 10px 30px 10px;
 	display: flex;
-    align-items: center;
-    justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .footer-wrapper {
 	margin-top: auto;
 }
 
-.footer a, .footer div  {
+.footer a,
+.footer div {
 	font-family: var(--font-family);
-	color: var(--color-light);	
+	color: var(--color-light);
 }
 
 .footer a:hover {
-	color: var(--color-red);	
+	color: var(--color-red);
 }
 
 .rss-logo {
@@ -148,14 +151,25 @@ header {
 
 .rss-link {
 	display: flex;
-    align-items: center;
+	align-items: center;
 	height: 5em;
 	text-align: left;
 	vertical-align: middle;
 }
 
+.mailto {
+	max-width: 15em;
+	width: 100%;
+}
+
+.github {
+	max-width: 5em;
+	width: 100%;
+}
+
 /* Interactions */
-button:hover, .count-select:hover {
+button:hover,
+.count-select:hover {
 	cursor: pointer;
 	opacity: 1;
 }
