@@ -139,7 +139,7 @@ header {
 }
 
 .footer a:hover {
-	color: rgb(179, 47, 47);	
+	color: var(--color-red);	
 }
 
 .rss-logo {
