@@ -15,13 +15,13 @@ async function fetchImages(query = "") {
   try {
     const response = await fetch(url);
     if (!response.ok) {
-      throw new Error(`Error: ${response.status}`);
+      throw new Error(`${response.status}`);
     }
     const data = await response.json();
     return data.results;
   } catch (error) {
     console.error('API Error:', error);
-    displayErrorMessage('!!!Failed to fetch images. Please try again later within 1 hour. You might exceeded you requests per hour 0/50 or there is an a error on api side!!!');
+    displayErrorMessage(`!!!Failed to fetch images. Please try again later within 1 hour. You might exceeded you requests per hour 0/50 or there is an a error on api side!!! Code: ${error}`);
     return [];
   }
 }
