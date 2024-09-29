@@ -1,6 +1,5 @@
-export function estimations () {
+export function estimations() {
     const reviewText = `
-    Ваша оценка - 70 баллов 
     Выполненные пункты:
     Score: 70 / 70 \n
         * на странице есть несколько фото и строка поиска  +5 \n
