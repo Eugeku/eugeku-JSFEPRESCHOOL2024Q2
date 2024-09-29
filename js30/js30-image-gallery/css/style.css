@@ -55,13 +55,12 @@ header {
 .controls {
 	margin: 1em;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 }
 
 .search-input {
-	width: 100%;
-	max-width: 25em;
+	width: 25em;
 	height: 2em;
 	border-radius: 1em;
 	font-family: var(--font-family);
