@@ -1,0 +1,189 @@
+@import url("./style-main.css");
+
+body {
+	background: var(--color-light-xl);
+}
+
+/* Header */
+
+.header-wrapper {
+	height: 120px;
+}
+
+h1 {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 110%;
+	letter-spacing: 0.06em;
+	color: var(--color-dark-l);
+}
+
+.header-subtitle {
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	color: var(--color-dark-3xl);
+}
+
+.header-nav li:hover a {
+	color: var(--color-dark-3xl);
+}
+
+.header-nav li a {
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 160%;
+	color: var(--color-dark-l);
+	letter-spacing: 0px;
+	text-align: left;
+	text-decoration: none;
+}
+
+.header-nav li.active-tab a {
+	color: var(--color-dark-3xl);
+}
+
+/* Pets */
+
+.pets-wrapper {
+	background: var(--color-light-l);
+}
+
+.pets-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 5em;
+	padding-bottom: 100px;
+}
+
+h2 {
+	max-width: 400px;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	text-align: center;
+	color: var(--color-dark-l);
+}
+
+.cards-container {
+	min-height: 930px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	gap: 30px 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.paginator {
+	max-width: 340px;
+	width: 100%;
+	height: 52px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.button-paginator {
+	border-radius: 100px;
+	width: 52px;
+	height: 52px;
+	background: var(--color-light-s);
+}
+
+.button-paginator span {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	text-align: center;
+}
+
+/* inactive */
+.button-paginator.inactive {
+	border: 2px solid var(--color-dark-s);
+}
+
+.button-paginator.inactive span {
+	color: var(--color-dark-s);
+}
+
+/* active */
+.button-paginator.active {
+	border: 2px solid var(--color-primary);
+}
+
+.button-paginator.active span {
+	color: var(--color-dark-3xl);
+}
+
+/* current */
+.button-paginator.current {
+	background: var(--color-primary);
+	border: 0px;
+}
+
+.button-paginator.current span {
+	color: var(--color-dark-3xl);
+}
+
+/* 768*/
+@media screen and (max-width: 1027px) {
+	.pets-content {
+		padding-top: 5em;
+		padding-bottom: 76px;
+	}
+
+	.cards-container {
+		padding-top: 30px;
+		padding-bottom: 40px;
+		max-height: 1350px;
+		gap: 30px 40px;
+		overflow: hidden;
+		align-content: space-around;
+	}
+
+	.paginator {
+		padding-top: 15px;
+	}
+}
+
+/* 320*/
+@media screen and (max-width: 767.98px) {
+	h2 {
+		font-size: 25px;
+	}
+
+	.menu-btn>span,
+	.menu-btn>span::before,
+	.menu-btn>span::after {
+		background-color: var(--color-dark-3xl);
+	}
+
+	.menu-btn.open>span,
+	.menu-btn.open>span::before,
+	.menu-btn.open>span::after {
+		background-color: var(--color-primary);
+	}
+
+	.pets-content {
+		padding-top: 2.625em;
+		padding-bottom: 2.625em;
+	}
+
+	.cards-container {
+		padding-top: 2.625em;
+		justify-content: center;
+		align-content: space-around;
+	}
+}
