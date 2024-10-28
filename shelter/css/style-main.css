@@ -51,7 +51,11 @@ body,
 .header-nav li.active-tab a:active,
 .header-nav li.active-tab:hover,
 .header-nav li.active-tab:active,
-.button-paginator.current:hover {
+.button-paginator.current:hover,
+.header-nav-mobile li.active-tab:hover,
+.header-nav-mobile li.active-tab:active,
+.header-nav-mobile li.active-tab:hover a,
+.header-nav-mobile li.active-tab:active a {
 	cursor: url(../images/icons/normal-cursor.svg), pointer !important;
 }
 
